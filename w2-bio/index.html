@@ -26,6 +26,48 @@
 
 
         }
+        #wrapper{
+
+    background-color: darkgray;
+    width:900px;
+    margin:auto;
+
+    }
+    
+    .headfont{
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+    }
+    .txtfont{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .border {
+    border:1px solid magenta;
+
+
+    }
+    #nav {
+    border:1px solid yellow;
+    text-align: center;
+
+
+    }
+    .pic {
+    width: 300px;
+    padding: 5px ;
+    box-shadow:0 0 8px black;
+    margin-left:275px;
+    
+    
+
+    }
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
     </style>
 </head>
 <body>
@@ -34,7 +76,7 @@
     <div id="wrapper"> 
 
         
-        <h1>Frank Vocatura</h1>
+        <h1 class="headfont">Frank Vocatura</h1>
 
 
         
@@ -45,22 +87,22 @@
             
             
             
-            <a href="#bio">BIO</a>
-            <a href="#school">SCHOOL</a>
-            <a href="#hobbies">HOBBIES</a>
-            <a href="#footer">Bottom of Page</a>
+            <a href="#bio" class="headfont">BIO</a>
+            <a href="#school" class="headfont">SCHOOL</a>
+            <a href="#hobbies" class="headfont">HOBBIES</a>
+            <a href="#footer" class="headfont">Bottom of Page</a>
 
         </div>
 
 
         <!--BIO-->
         <div id="bio">
-        <h2>About Me</h2>
-        <p> My name is <b>Frank Vocatura</b> and I am enrolled in the Software Engineering program at <i>NEIT</i>. I am 22 years old and was born in <u>Westerly, Rhode Island.</u> I graduated from Westerly High School in 2019 and took a few courses at CCRI. Some things I enjoy are playing games on my computer, coding and traveling. I am very excited to learn more about HTML and Java in this course!</p>
+        <h2 class="headfont">About Me</h2>
+        <p class="txtfont"> My name is <b>Frank Vocatura</b> and I am enrolled in the Software Engineering program at <i>NEIT</i>. I am 22 years old and was born in <u>Westerly, Rhode Island.</u> I graduated from Westerly High School in 2019 and took a few courses at CCRI. Some things I enjoy are playing games on my computer, coding and traveling. I am very excited to learn more about HTML and Java in this course!</p>
 
         
-        <img src="images/smile.webp" alt="Blank" style="width:100px">
-        <img src="images/family.jpg" alt="Storms End" style="width: 300px">
+        <img src="images/smile.webp" alt="Blank" class="pic"; class="center">
+        
 
         </div>
 
@@ -68,31 +110,32 @@
         <!--SCHOOLS-->
         <div id="school">
 
-            <h2>Schools</h2>
+            <h2 class="headfont">Schools</h2>
 
             <ol>
-                <li>Westerly High School</li>
-                <li>School 2</li>
-                <li>School 3</li>
+                <li class="txtfont">Westerly High School</li>
+                <li class="txtfont">Community College of Rhode Island</li>
+                <li class="txtfont">New England Tech</li>
 
             </ol>
-            <img src="images/whs.png" alt="Westerly High School" style="width:200px">
-            <img src="" alt="School2" style="width:500px">
-            <img src="" alt="School3" style="width:500px">
+            <img src="images/whs.png" alt="Westerly High School" class="center" class="pic" style="width:200px">
+            <img src="images/CCRI_Logo_349_6in.png" alt="CCRI" class="center" class="pic" style="width:200px" style="width:250px">
+            <img src="images/neit_logo.png" alt="NEIT" class="center" class="pic" style="width:200px" style="width:200px">
 
 
         </div>
 
         <!--HOBBIES-->
         <div id="hobbies">
-            <h2>Hobbies</h2>
+            <h2 class="headfont">Hobbies</h2>
 
             <ul>
-                <li>Hobbies</li>
-                <li>Hobbies</li>
-                <li>Hobbies</li>
+                <li class="txtfont">Gaming</li>
+                <li class="txtfont">School</li>
+                <li class="txtfont">Traveling</li>
 
             </ul>
+            <img src="images/macho man.png" alt="Macho Man!" class="pic">
 
         </div>
 
@@ -105,7 +148,7 @@
             <p>&copy; F VOCATURA | SE 111 | Winter 2023</p>
             <br>
             <!--VALIDATE SCREENSHOT-->
-            <img src="images/Capture.PNG" alt="validation of page" style="width:500px">
+            <img src="images/Capture.PNG" alt="validation of page" class="pic">
 
         </div>
 
