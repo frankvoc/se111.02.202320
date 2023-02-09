@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week 5 Demo">
+    <meta name="author" content="F Vocatura">
+
+    <title>Document</title>
+    <style>
+        
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Basic Form Demo</h1>
+
+    <h2>Form w/o Table</h2>
+    <form method="" action="">
+        <!--FirstName-->
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname" required>
+        <br>
+        
+        <!--LastName-->
+       <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" required>
+        <br>
+
+    
+
+        <!--Email-->
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" maxlength="26" required>
+        <br>
+        <!--SumitButton-->
+        <input type="submit" value="Submit">
+
+
+    </form>
+    <hr>
+
+    <h2>Form with Table</h2>
+    <form>
+        <table>
+            <tbody>
+                
+                <tr>
+
+                    <!--LabelFirstName-->
+                    <td>
+                        <label type="first">First Name:</label>
+                    </td>
+                    <!--InputFirstName-->
+                    <td>
+                        <input type="text" name="first" id="first">
+                    </td>
+                </tr>
+
+                <tr>
+                    <!--LabelLastName-->
+                    <td>
+                        <label type="last">Last Name:</label>
+                    </td>
+                    <!--InputLastName-->
+                    <td>
+                        <input type="text" name="last" id="last">
+                    </td>
+                </tr>
+
+                <tr>
+                    <!--LabelEmail-->
+                    <td>
+                       <label type="email">Email:</label>
+                    </td>
+                    <!--InputEmail-->
+                    <td>
+                        <input type="text" name="email" id="email" placeholder="example@.com" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                    </td>
+                </tr>
+
+                <tr><!--TEXTBOX-->
+
+                    <!--Label-->
+                    <td>
+                       <label for="comments">Comments:</label>
+                    </td>
+                    <!--Input-->
+                    <td>
+                        <textarea name="comments" id="comments" placeholder="Leave comment here...." style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" ></textarea>
+                    </td>
+                </tr>
+                
+
+                <tr>
+                    <!--Submit-->
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+                
+                
+
+            </tbody>
+        </table>
+    </form>
+
+
+    
+</body>
+</html>
