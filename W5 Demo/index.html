@@ -24,58 +24,35 @@
 </head>
 <body>
 
-    <h1>Basic Form Demo</h1>
+ 
 
-    <h2>Form w/o Table</h2>
-    <form method="" action="">
-        <!--FirstName-->
-        <label for="firstname">First Name:</label>
-        <input type="text" name="firstname" id="firstname" required>
-        <br>
-        
-        <!--LastName-->
-       <label for="lastname">Last Name:</label>
-        <input type="text" name="lastname" id="lastname" required>
-        <br>
-
-    
-
-        <!--Email-->
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email" maxlength="26" required>
-        <br>
-        <!--SumitButton-->
-        <input type="submit" value="Submit">
-
-
-    </form>
-    <hr>
-
-    <h2>Form with Table</h2>
+    <h1>Birthday Registration</h1>
     <form>
-        <table>
+        <table border="1">
             <tbody>
                 
                 <tr>
 
                     <!--LabelFirstName-->
                     <td>
-                        <label type="first">First Name:</label>
+                        <label type="pname">Parent/Guardian Name:</label>
                     </td>
                     <!--InputFirstName-->
                     <td>
-                        <input type="text" name="first" id="first">
+                        <input type="text" name="firstName" id="pname" placeholder="First Name...">
+                        <br>
+                        <input type="text" name="lastName" id="pname"placeholder="Last Name...">
                     </td>
                 </tr>
 
                 <tr>
                     <!--LabelLastName-->
                     <td>
-                        <label type="last">Last Name:</label>
+                        <label type="cname">Child's Name:</label>
                     </td>
                     <!--InputLastName-->
                     <td>
-                        <input type="text" name="last" id="last">
+                        <input type="text" name="cname" id="cname">
                     </td>
                 </tr>
 

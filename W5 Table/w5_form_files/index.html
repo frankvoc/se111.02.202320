@@ -1,95 +1,176 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--The type of font we are using-->
     <meta charset="UTF-8">
-    <!--Tells the -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week 5 Demo">
     <meta name="author" content="F Vocatura">
-    <meta name="description" content="W5 Tables and Form">
-    
-    <link type="text/css" rel="stylesheet" href="style.css">
 
-    <title>Week 5 | Tables and Forms</title>
+    <title>Document</title>
+    <style>
+        
+
+
+
+
+
+
+
+
+
+    </style>
 </head>
 <body>
+
+ 
+
     <h1>Birthday Registration</h1>
-    <form method="GET" action="confirm.html"
-
-        <table>
+    <form method="get" action="confirm.html">
+        <table border="1">
             <thead>
-
                 <tr>
                     <td>
                         <h2>Labels</h2>
+
                     </td>
+
                     <td>
-                        <h2>Form Field</h2>
+                        <h2>Required Field</h2>
                     </td>
+
                 </tr>
+
+
             </thead>
             <tbody>
+                
+                <tr>
+
+                    <!--LabelFirstName-->
+                    <td>
+                        <label type="pname">Parent/Guardian Name:</label>
+                    </td>
+                    <!--InputFirstName-->
+                    <td>
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name...">
+                        <br>
+                        <input type="text" name="firstName" id="lastName"placeholder="Last Name...">
+                    </td>
+                </tr>
+
+                <tr>
+                    <!--LabelLastName-->
+                    <td>
+                        <label type="cname">Child's Name:</label>
+                    </td>
+                    <!--InputLastName-->
+                    <td>
+                        <input type="text" name="cname" id="cname">
+                    </td>
+                </tr>
+
+                <tr>
+                    <!--LabelEmail-->
+                    <td>
+                       <label type="email">Email:</label>
+                    </td>
+                    <!--InputEmail-->
+                    <td>
+                        <input type="text" name="email" id="email" placeholder="example@.com" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                    </td>
+                </tr>
+
+                <tr><!--TEXTBOX-->
+
+                    <!--Label-->
+                    <td>
+                       <label for="comments">Comments:</label>
+                    </td>
+                    <!--Input-->
+                    <td>
+                        <textarea name="comments" id="comments" placeholder="Leave comment here...." style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" ></textarea>
+                    </td>
+                </tr>
                 <tr>
                     
                     <td>
-                        <label for="parname">Parent Name</label>
+                        <label for="favcolor">Pick your favorite color:</label>
                     </td>
-
                     
                     <td>
-                        <input type="text" name="parname" id="parname" placeholder="Firstname">
-                        <br>
-                        <input type="text" name="parname" id="parname" placeholder="Lastname">
-                    </td>
+                        <select name="favcolor">
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
 
+                        </select>
+                    </td>
                 </tr>
+                <tr><!--Program of Study-->
+                    
+                    <td><!--Label-->
+                        <label for="study">Program of Study:</label>
+                    </td>
+                    <td><!--INPUT-->
+                        <input type="radio" name="study" value="SE">Software Engineering<br>
+                        <input type="radio" name="study" value="CYB">Cybersecurity <br>
+                        <input type="radio" name="study" value="NE">Networking <br>
+                        <input type="radio" name="study" value="WD">Web Development <br>
+                    </td>
+                </tr>
+                <tr><!--Checkboxes-->
+                    
+                    <td><!--Label-->
+                       <label for="vehicle">Select your vehicle(s):</label>
+                    </td>
+                    <td><!--INPUT-->
+                       <input type="checkbox" name="vehicle1" value="car">Car<br>
+                       <input type="checkbox" name="vehicle2" value="roci">Rocinante<br>
+                       <input type="checkbox" name="vehicle3" value="mech">Gundam Warrior<br>
+                       <input type="checkbox" name="vehicle4" value="motorcycle">Motorcycle<br>
+                       <input type="checkbox" name="vehicle5" value="bike">Bicycle<br>
+                       <input type="checkbox" name="vehicle6" value="dragon">Drogron<br>
+                       <input type="checkbox" name="vehicle7" value="horse">Roach<br>
+                    </td>
+                </tr>
+                <tr><!--DATE AND TIME-->
+                    <!--Label-->
+                    <td>
+                        <label for="date">Date:</label>
+                    </td>
+                    <!--Input-->
+                    <td>
+                        <input type="date" name="date" id="date">
+                    </td>
+                </tr>
+                <tr><!--DATE AND TIME-->
+                    <!--Label-->
+                    <td>
+                        <label for="time">Time:</label>
+                    </td>
+                    <!--Input-->
+                    <td>
+                        <input type="time" name="time" id="time">
+                    </td>
+                </tr>
+
+                <tr>
+                    <!--Submit-->
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            
+                
                 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
             </tbody>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </table>
-   
+    </form>
+
+
     
 </body>
 </html>
