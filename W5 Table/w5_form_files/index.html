@@ -50,110 +50,131 @@
 
                     <!--LabelFirstName-->
                     <td>
-                        <label type="pname">Parent/Guardian Name:</label>
+                        <label type="gname">Parent/Guardian Name:</label>
                     </td>
                     <!--InputFirstName-->
                     <td>
-                        <input type="text" name="firstName" id="firstName" placeholder="First Name...">
+                        <input type="text" name="gfirst" id="g-first" placeholder="First Name..." required>
                         <br>
-                        <input type="text" name="firstName" id="lastName"placeholder="Last Name...">
+                        <input type="text" name="glast" id="g-last"placeholder="Last Name..." required>
                     </td>
                 </tr>
 
                 <tr>
-                    <!--LabelLastName-->
+                    <!--label child name-->
                     <td>
                         <label type="cname">Child's Name:</label>
                     </td>
-                    <!--InputLastName-->
+                    <!--inputchild name-->
                     <td>
-                        <input type="text" name="cname" id="cname">
+                        <input type="text" name="cname" id="cname" placeholder="Child's name..." required>
                     </td>
                 </tr>
 
                 <tr>
-                    <!--LabelEmail-->
+                    <!--Child age-->
                     <td>
-                       <label type="email">Email:</label>
+                       <label type="age">Child's Age:</label>
                     </td>
-                    <!--InputEmail-->
+                    <!--Child age input-->
                     <td>
-                        <input type="text" name="email" id="email" placeholder="example@.com" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                        <input type="number" name="age" value="3" required>
                     </td>
                 </tr>
 
-                <tr><!--TEXTBOX-->
+                <tr><!--Date and time-->
 
                     <!--Label-->
                     <td>
-                       <label for="comments">Comments:</label>
+                       <label for="date">Date:</label>
                     </td>
                     <!--Input-->
                     <td>
-                        <textarea name="comments" id="comments" placeholder="Leave comment here...." style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" ></textarea>
+                        <input type="date" required name="date">
                     </td>
                 </tr>
                 <tr>
                     
-                    <td>
-                        <label for="favcolor">Pick your favorite color:</label>
-                    </td>
-                    
-                    <td>
-                        <select name="favcolor">
-                            <option value="red">Red</option>
-                            <option value="green">Green</option>
-                            <option value="blue">Blue</option>
-
-                        </select>
-                    </td>
-                </tr>
-                <tr><!--Program of Study-->
-                    
-                    <td><!--Label-->
-                        <label for="study">Program of Study:</label>
-                    </td>
-                    <td><!--INPUT-->
-                        <input type="radio" name="study" value="SE">Software Engineering<br>
-                        <input type="radio" name="study" value="CYB">Cybersecurity <br>
-                        <input type="radio" name="study" value="NE">Networking <br>
-                        <input type="radio" name="study" value="WD">Web Development <br>
-                    </td>
-                </tr>
-                <tr><!--Checkboxes-->
-                    
-                    <td><!--Label-->
-                       <label for="vehicle">Select your vehicle(s):</label>
-                    </td>
-                    <td><!--INPUT-->
-                       <input type="checkbox" name="vehicle1" value="car">Car<br>
-                       <input type="checkbox" name="vehicle2" value="roci">Rocinante<br>
-                       <input type="checkbox" name="vehicle3" value="mech">Gundam Warrior<br>
-                       <input type="checkbox" name="vehicle4" value="motorcycle">Motorcycle<br>
-                       <input type="checkbox" name="vehicle5" value="bike">Bicycle<br>
-                       <input type="checkbox" name="vehicle6" value="dragon">Drogron<br>
-                       <input type="checkbox" name="vehicle7" value="horse">Roach<br>
-                    </td>
-                </tr>
-                <tr><!--DATE AND TIME-->
-                    <!--Label-->
-                    <td>
-                        <label for="date">Date:</label>
-                    </td>
-                    <!--Input-->
-                    <td>
-                        <input type="date" name="date" id="date">
-                    </td>
-                </tr>
-                <tr><!--DATE AND TIME-->
-                    <!--Label-->
                     <td>
                         <label for="time">Time:</label>
                     </td>
+                    
+                    <td>
+                        <input type="time" required name="time">
+                    </td>
+                </tr>
+                <tr><!--Guests-->
+                    
+                    <td><!--Label-->
+                        <label for="guests">Number of Guests:</label>
+                    </td>
+                    <td><!--INPUT-->
+                        <input type="number" name="guests" value="5" required>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td><!--Label-->
+                       <label for="size">Food size:</label>
+                    </td>
+                    <td><!--INPUT-->
+                       <input type="radio" name="size" value="sm">Small<br>
+                       <input type="radio" name="size" value="md">Medium<br>
+                       <input type="radio" name="size" value="lg">Large<br>
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>
+                        <label for="drinks">Drinks:</label>
+                    </td>
                     <!--Input-->
                     <td>
-                        <input type="time" name="time" id="time">
+                        <input type="checkbox" name="drink1"  checked="true" value="coke"> <label for="drink1">Coke<label><br>
+                            <input type="checkbox" name="drink2"   value="Fruit Punch"> <label for="drink2">Fruit Punch<label><br>
+                                <input type="checkbox" name="drink3"   value="Sprite"> <label for="drink3">Sprite<label><br>
+                                    <input type="checkbox" name="drink4"   value="Lemonade"> <label for="drink4">Lemonade<label><br>
+                                        <input type="checkbox" name="drink5"   value="Iced Tea"> <label for="drink5">Iced Tea<label><br>
+                                        
                     </td>
+                </tr>
+                <tr>
+                    <!--Label-->
+                    <td>
+                        <label for="cake">Cake Flavor:</label>
+                    </td>
+                    <!--Input-->
+                    <td>
+                        <select name="cake" required>
+                            <option>Vanilla</option>
+                            <option>Chocolate</option>
+                            <option>I'll Bring my Own</option>
+                    </td>
+                </tr>
+                <tr>
+                    <!--Label-->
+                    <td>
+                        <label for="color">Color Theme:</label>
+                    </td>
+                    <!--Input-->
+                    <td>
+                        <input type="color" name="colors">
+
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+
+                        <label for="comments">Comments: </label>
+                    </td>
+
+                    <td>
+                        <textarea name="comments" id="comments" rows="2" cols="15" placeholder="Enter your comment here ..." style="font-family:Arial, Helvetica, sans-serif"></textarea>
+
+                    </td>
+
                 </tr>
 
                 <tr>
