@@ -1,4 +1,4 @@
-!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,56 +7,25 @@
     <meta name="author" content="F Vocatura">
     <meta name="description" content="W6 Demo">
 
-    <title>W6 Demo</title>
+    <title>W6 JS Pay Calculator</title>
     <style>
 
     </style>
 </head>
 <body>
-    <h1>Week 6 Demo for JS</h1>
+    <h1>Week 6 | JavaScript Pay Calculator |</h1>
     <script>
-        //for comments
-        //declare a variable (var)
-
-        var num1=10
-        var num2=7
-        // cannot use num1 and num2 until they have been assigned data (=)
-
-        var sum=num1+num2
-        //output 
-        //console.log()
-
-        console.log(num1)//only for developer and testing
-        console.log(num1,num2,sum)
-        console.log(`Hello World!`)
-        console.log(num1+`+`+num2+`=`+sum)
-
-        //literal string use ``
-        //${VAR} displays stored value for var names
-
-        console.log(`${num1}+${num2}=${sum.toFixed(2)}`)
-
-        //output display for user
-
-        alert(`The sum is :${sum}`)//print statement
-        console.log(`Hi`)
-        alert(`Hello`)
-        console.log(`byeye`)
-
-        //escape also work in strings "" `` ''
-        //Uses python\t \n 
-
-        //Input in python --> prompt in JS
-        //prompt always returns strings --> Use Number()
-        //assign return of prompt() to var to use in rest of program
-
-        var tip=Number(prompt(`Hello World! \nThe sum is ${sum.toFixed(2)}! Enter a number to add as tip : $`))
-
-        tip=Number(tip)
-
-        var total=sum+Number(tip)
-
-        alert(`Your total with tip is now : $${total.toFixed(2)}`)
+       var wage = Number (prompt(`Please enter your hourly wage: `))
+       var workTime = Number(prompt(`Please enter your hours worked per week :`))
+       var tax = 20
+       var grossPay = wage * workTime * 2
+       console.log(`${grossPay}`)
+       var uncleSam = grossPay * (tax/100) 
+       console.log(`${uncleSam}`)
+       var netPay = grossPay - uncleSam 
+       console.log(`${netPay}`)
+       alert(`Your gross pay for 2 weeks is $${grossPay.toFixed(2)}\nUncle Sam's share is $${uncleSam.toFixed(2)}\nYour net pay for 2 weeks is $${netPay.toFixed(2)}`)
+        
         
         
     </script>
