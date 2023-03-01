@@ -45,7 +45,7 @@
 
 
         <!-- give the button below (that is the only form element without a label) an id of "enter-button"-->
-        <input type="button" id="" value="Enter">
+        <input type="button" id="enter-button" value="Enter">
 
         <br>
         <br>
@@ -71,7 +71,7 @@
 
     <script>
         //edit the below statement to select the #enter-button id from the HTML file
-        document.querySelector().addEventListener(`click`, alertName)
+        document.querySelector(`#enter-button`).addEventListener(`click`, alertName)
         
         
 
@@ -84,21 +84,25 @@
             lname --> last name, #last
             hours --> hours worked, #hours
             rate --> hourly rate, #rate */
+            var fname = prompt(`Please enter your first name:`)
+            var lname = prompt(`Please enter your last name:`)
+            var hours = Number(prompt(`Please enter the hours worked:`))
+            var rate = Number(prompt(`Please enter your hourly wage:`))
             
 
 
             //console.log() all four values
             
-            console.log()
-            console.log()
-            console.log()
-            console.log()
+            console.log(fname)
+            console.log(lname)
+            console.log(hours)
+            console.log(rate)
 
             //add the first and last name values together and store into a new variable called 'full' holding the user's full name
-            var full 
+            var full = fname + ` ` + lname
 
             //console.log() the full name value
-            console.log()
+            console.log(full)
 
 
             //convert both hours and rate to Number() data types
@@ -109,10 +113,15 @@
 
             //create gross, taxAmount, net variables and store corresponding data to them
             //use a tax percentage of 20% (.2)
-            
+            var grossPay = hours * rate
+            var tax = 20 
+            var taxAmount = grossPay * (tax/100)
+            var netPay = grossPay - taxAmount
+            console.log(`${grossPay.toFixed(2)}`)
+            console.log(`${taxAmount.toFixed(2)}`)
+            console.log(`${netPay.toFixed(2)}`)
 
             //console.log() all three processed values, rounded to the second decimal place
-            console.log(.toFixed(2))
 
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
