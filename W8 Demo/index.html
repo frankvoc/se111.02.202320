@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="F Vocatura">
+    <meta name="description" content="W8 Demo">
+    <title>W8 Demo</title>
+</head>
+<body>
+    <h1>W8 JS Demo</h1>
+    <div id="output">
+        
+    </div>
+
+    <script>
+        var name = "Frank"
+        console.log(name)
+        //Arrays----------------------------------------------------
+        //create populated array - declaration
+        var people = ["Frank" , "Jay" , "Spencer", "Matt", "Nick"]
+        console.log(people)
+        console.log(people[0])
+        var firstName = people[0]
+        console.log(firstName)
+        console.log(`The length of the people array list is: ${people.length}`)
+        //adding more names to the people array
+        people[5] = `Sebastian`
+        console.log(people)
+        //use push() to add new values 
+        people.push(`Ryan`) //python append
+        console.log(people)
+        //user input to supply a value to the array
+        //people.push(prompt(`Enter a name to add to the array: `))
+        //console.log(people)
+
+        //parallel arrays --> mulitple arrays with seperate data collections
+        //data across multiple arrays is connect by matching index
+        var color = [`black` , `grey` , `red` , `blue` , `orange` , `yellow` , `green`]
+        console.log(`${people[2]}'s favorite color is ${color[2]}`)
+        //automate population
+        var htmlClass=[]
+        //process an entire array at once
+        //array processing ---> For loop(standard)
+        for(let index = 0;index<people.length;index++)
+        {
+            //bellow occurs to every value in array
+            console.log(`Index${index}: ${people[index]}'s favorite color is ${color[index]}`)
+            htmlClass.push(`SE111.02`)
+
+        }
+        console.log(`Name\tColor\tClass`)
+        for(let index = 0;index<people.length;index++)
+        {
+            console.log(`${people[index]}\t${color[index]}\t${htmlClass[index]}`)
+        }
+        //associative arrays
+        var associatePeople = []
+        associatePeople[`first`] = `Frank`
+        associatePeople[`last`] = `Vocatura`
+        associatePeople[`cat`] = `jack`
+        //access a value name + key = value
+        console.log(associatePeople[`cat`])
+        
+        //Objects---------------------------------------------------
+        //create a new object
+        //object key ---> property
+        var person1 = {
+           first: `Frank`,
+           last: `Vocatura`,
+           hasPets: true, 
+           height: 64,
+           classes: [`SE111`,`SE126`,`MA125`],
+           pets: {dogs: ['George', 'Marlowe'], cats: [`Jack`]},
+
+            greeting: function() {
+                alert(`Hi ${this.first} ${this.last}!`)
+            }
+        }
+        
+        console.log(person1)
+        console.log(person1.height)
+        console.log(person1.classes)
+        console.log(person1.classes[2])
+        console.log(person1.pets.dogs[0])
+        console.log(person1.greeting())
+
+        var person2 = {
+           first: `Antonio`,
+           last: `Martinez`,
+           hasPets: true, 
+           height: 70,
+           classes: [`SE111`],
+           pets: {dogs: [], cats: [`Tadej`]},
+           greeting: function(){alert(`Hi ${this.first} ${this.last}!`)}
+       }
+
+       console.log(person2)
+       console.log(person2.height)
+       console.log(person2.classes)
+       console.log(person2.classes[0])
+       console.log(person2.pets.cats[0])
+       person2.greeting()
+
+
+        //processing objects
+        //uses 'for key in obj' loop
+        for (let key in person1)
+        {
+            console.log(`${key}:${person1[key]}`)
+            //key represents the property name
+        }
+
+        //W8 Homework Notes ----------------------------------------
+        //create an array already populated with person1 and person2
+        //in the HW you need to create an empty array
+        var humans = [
+            person1,
+            person2
+        ]
+        var person3={
+            first: `Ryan`,
+            last: `Kelly`,
+            hasPets: true,
+            height: 71,
+            classes:[`SE111.02`],
+            pets:{
+                cats:[`Buddy`]
+            },
+            greeting: function(){
+                alert(`Hey ${this.first}!`)
+            }
+        }
+        //add object to array
+        humans.push(person3)
+        for (let i = 0;i<humans.length;i++)
+        {
+            console.log(`Info for: ${humans[i].first}: `)
+            for (let key in humans[i])
+            {
+                console.log(`${key}: ${humans[i][key]}`)
+            }
+            console.log(`---------------------`)
+        }
+        //write this to the html page
+        var output =` `
+        for (let i = 0;i<humans.length;i++)
+        {
+            output+=`<h3>Info for: ${humans[i].first}:</h3> `
+            for (let key in humans[i])
+            {
+               output+=`<p><b>${key}:</b> ${humans[i][key]}</p>`
+            }
+            output+=`<br>`
+        }
+        document.querySelector(`#output`).innerHTML = output
+
+    </script>
+</body>
+</html>
