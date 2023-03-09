@@ -21,22 +21,22 @@
 
         
             <label for="first">First Name: </label>
-            <input type="text" id="">
+            <input type="text" id="first">
 
             <br>
 
             <label for="last">Last Name: </label>
-            <input type="text" id="">
+            <input type="text" id="last">
 
             <br>
 
             <label for="hours">Hours Worked: </label>
-            <input type="text" id="">
+            <input type="text" id="hours">
 
             <br>
 
         <label for="rate">Hourly Rate: </label>
-        <input type="text" id="">
+        <input type="text" id="rate">
 
         <br>
 
@@ -84,10 +84,12 @@
             lname --> last name, #last
             hours --> hours worked, #hours
             rate --> hourly rate, #rate */
-            var fname = prompt(`Please enter your first name:`)
-            var lname = prompt(`Please enter your last name:`)
-            var hours = Number(prompt(`Please enter the hours worked:`))
-            var rate = Number(prompt(`Please enter your hourly wage:`))
+            var fname = document.querySelector(`#first`).value
+            var lname = document.querySelector(`#last`).value
+            var hours = document.querySelector(`#hours`).value
+            var rate = document.querySelector(`#rate`).value
+            hours = Number(hours)
+            rate = Number(rate)
             
 
 
@@ -117,15 +119,17 @@
             var tax = 20 
             var taxAmount = grossPay * (tax/100)
             var netPay = grossPay - taxAmount
+           
+
+            //console.log() all three processed values, rounded to the second decimal place
             console.log(`${grossPay.toFixed(2)}`)
             console.log(`${taxAmount.toFixed(2)}`)
             console.log(`${netPay.toFixed(2)}`)
 
-            //console.log() all three processed values, rounded to the second decimal place
 
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
-            var finalMessage = ``
+            var finalMessage = `Full name${fname}``<br>`
 
         
             //create a new var called 'info' and store the entire #info *HTML element* to it

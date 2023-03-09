@@ -39,8 +39,10 @@
 	
 		//Store the elements (tags) in variables
 		
+		
 
 		//Make an array to store the people
+		var humans = []
 		
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
@@ -69,6 +71,9 @@
 				//2. last: will be a string that uses the last Input's value
 
             var person = {
+				first = document.querySelector(`#first`),
+				last = document.querySelector(`#last`)
+			
 
 
 
@@ -78,6 +83,7 @@
 
 
 			//Add the person object into the people array by using the .push() array method.
+			humans.push(person)
 			
 
 			//Bubble sort people on the last name
@@ -95,6 +101,7 @@
 			}//end of bubble sort algorithm!
 
 			//console.log the people array to check that the people array is formatted correctly and is populated with the correct objects
+			console.log(humans)
 			
 
 			//create a variable called 'output' that has an empty string value stored to 
